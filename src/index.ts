@@ -31,10 +31,10 @@ export function formatReport(report: Report): string {
   return lines.join("\n");
 }
 
-function main() {
-  console.log("\nFetching emails...\n");
+async function main() {
+  console.log("\nAnalyzing emails with Claude...\n");
 
-  const report = generateReport(mockEmails);
+  const report = await generateReport(mockEmails);
   console.log(formatReport(report));
 }
 
