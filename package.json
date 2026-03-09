@@ -7,10 +7,15 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "tsx": "^4.7.0",
     "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.18"
   }
 }

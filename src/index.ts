@@ -1,7 +1,7 @@
 import { mockEmails } from "./emails.js";
 import { generateReport, type Report } from "./summarizer.js";
 
-function formatReport(report: Report): string {
+export function formatReport(report: Report): string {
   const lines: string[] = [];
 
   lines.push("=".repeat(60));
@@ -38,4 +38,6 @@ function main() {
   console.log(formatReport(report));
 }
 
-main();
+if (process.argv[1] && !process.argv[1].includes("vitest")) {
+  main();
+}
