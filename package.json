@@ -1,0 +1,16 @@
+{
+  "name": "mitgard-email-summarizer",
+  "version": "0.1.0",
+  "description": "Automatic email summarization agent",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}
